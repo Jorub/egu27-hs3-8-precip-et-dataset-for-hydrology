@@ -40,3 +40,5 @@
 - Further reduced Instagram title typography to 22/18 pt, keeping 14 pt body text and tightening title-to-introduction spacing.
 
 - Moved the Instagram contribution introduction and four topic boxes down together by 5 mm to create clearer separation below the session title.
+
+- Moved Instagram conference dates and location beneath the EGU27 header, removed the footer duplicate and reclaimed the footer space for the mountain/river illustration.

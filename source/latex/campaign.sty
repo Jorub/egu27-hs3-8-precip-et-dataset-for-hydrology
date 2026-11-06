@@ -101,9 +101,10 @@
 \clip (0,0) rectangle (180,225);
 \path[fill=Cream] (0,0) rectangle (180,225);
 \path[fill=Yellow] (0,203)--(6,203)--(6,225)--(0,225)--cycle;
-\node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (12,212) {\href{\ConferenceURL}{\ConferenceName}};
-\node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (168,212) {\href{\SessionURL}{SESSION \SessionCode}};
-\draw[Ink!15,line width=.25mm] (12,204)--(168,204);
+\node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (12,216) {\href{\ConferenceURL}{\ConferenceName}};
+\node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (168,216) {\href{\SessionURL}{SESSION \SessionCode}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (12,206) {\href{\ConferenceURL}{\ConferenceLine}};
+\draw[Ink!15,line width=.25mm] (12,201)--(168,201);
 \node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (12,194) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
 \node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (12,183) {\PrimaryTitle};
 \node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (12,174) {\SecondaryTitle{} Datasets};
@@ -119,19 +120,18 @@
 \node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,137) {\ContributionTwo};
 \node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,116) {\ContributionThree};
 \node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,116) {\ContributionFour};
-\WaterScene{0}{42}{180}{62}
-\path[fill=Ink] (0,0) rectangle (180,42);
+\WaterScene{0}{36}{180}{68}
+\path[fill=Ink] (0,0) rectangle (180,36);
 % Compact paired panels leave more height for the mountain/river scene.
-\path[fill=Yellow,rounded corners=2mm] (12,12) rectangle (88,39);
-\path[fill=Cobalt!18!Ink,draw=white!25!Ink,line width=.2mm,rounded corners=2mm] (92,12) rectangle (168,39);
-\node[anchor=base west,text=Ink,font=\BodyFont\bfseries] at (16,29) {\href{\SupportURL}{TRAVEL SUPPORT}};
-\node[anchor=base west,text=Ink,font=\BodyFont\bfseries] at (16,22) {\href{\SupportURL}{\SupportDeadlineDate}};
-\node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (96,29) {\href{\SessionURL}{ABSTRACTS}};
-\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (96,22) {\href{\SessionURL}{\DeadlineDate}};
+\path[fill=Yellow,rounded corners=2mm] (12,6) rectangle (88,33);
+\path[fill=Cobalt!18!Ink,draw=white!25!Ink,line width=.2mm,rounded corners=2mm] (92,6) rectangle (168,33);
+\node[anchor=base west,text=Ink,font=\BodyFont\bfseries] at (16,23) {\href{\SupportURL}{TRAVEL SUPPORT}};
+\node[anchor=base west,text=Ink,font=\BodyFont\bfseries] at (16,16) {\href{\SupportURL}{\SupportDeadlineDate}};
+\node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (96,23) {\href{\SessionURL}{ABSTRACTS}};
+\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (96,16) {\href{\SessionURL}{\DeadlineDate}};
 % Preserve the verified code size and four-module white quiet zones.
-\node[anchor=south,fill=white,inner sep=0pt,text=black] at (75,15) {\qrcode[height=17mm,padding,level=L]{\SupportURL}};
-\node[anchor=south,fill=white,inner sep=0pt,text=black] at (155,15) {\qrcode[height=17mm,padding,level=L]{\SessionURL}};
-\node[anchor=base west,text=white,font=\BodyFont] at (12,5) {\href{\ConferenceURL}{\ConferenceLine}};
+\node[anchor=south,fill=white,inner sep=0pt,text=black] at (75,9) {\qrcode[height=17mm,padding,level=L]{\SupportURL}};
+\node[anchor=south,fill=white,inner sep=0pt,text=black] at (155,9) {\qrcode[height=17mm,padding,level=L]{\SessionURL}};
 \end{scope}
 \end{tikzpicture}%
 }
