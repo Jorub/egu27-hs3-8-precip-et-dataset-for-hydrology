@@ -38,3 +38,5 @@
 - Reduced the Instagram title sizes to 24/20 pt while retaining 14 pt body text; tightened the gap to the contribution introduction and moved the topic boxes up to give the landscape more room.
 
 - Further reduced Instagram title typography to 22/18 pt, keeping 14 pt body text and tightening title-to-introduction spacing.
+
+- Moved the Instagram contribution introduction and four topic boxes down together by 5 mm to create clearer separation below the session title.
