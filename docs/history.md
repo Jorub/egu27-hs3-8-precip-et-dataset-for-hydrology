@@ -11,3 +11,6 @@
 - Prepared a GitHub Pages deployment workflow. Publishing status is established by the actual repository and deployment, not by this history entry.
 - Corrected co-convener André Simões Ballarin’s full name in the website and share copy following the owner’s correction.
 - Promoted the conveners to a prominent blue/yellow section near the top of the website and added all five names to dedicated blue panels in both editable banners, preserving the three-size typography system.
+
+- Moved conveners above the main website introduction and into the top of both banners; linked each name to its verified ORCID profile.
+- Refined the top-of-page convener treatment to a compact pale-blue panel with regular-weight linked names, keeping the scientific title dominant.

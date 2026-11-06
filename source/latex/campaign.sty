@@ -113,29 +113,29 @@
 \path[fill=Yellow] (0,203)--(6,203)--(6,225)--(0,225)--cycle;
 \node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (12,212) {\href{\ConferenceURL}{\ConferenceName}};
 \node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (168,212) {\href{\SessionURL}{SESSION \SessionCode}};
-\draw[Ink!15,line width=.25mm] (12,204)--(168,204);
-\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (12,194) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
-\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (11,179) {\PrimaryTitle};
-\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (11,164) {\SecondaryTitle};
-\node[anchor=base west,text=Ink,font=\ContextFont] at (12,155) {\ContextTitle};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (12,148) {We welcome contributions on\ldots};
+\path[fill=Sky!45!Cream] (0,184) rectangle (180,210);
+\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (12,205) {YOUR CONVENERS / ORCID};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (12,199) {\href{\ConvenerOneURL}{\ConvenerOne}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (94,199) {\href{\ConvenerTwoURL}{\ConvenerTwo}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (12,193) {\href{\ConvenerThreeURL}{\ConvenerThree}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (94,193) {\href{\ConvenerFourURL}{\ConvenerFour}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (12,187) {\href{\ConvenerFiveURL}{\ConvenerFive}};
+
+\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (12,179) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
+\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (11,164) {\PrimaryTitle};
+\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (11,149) {\SecondaryTitle};
+\node[anchor=base west,text=Ink,font=\ContextFont] at (12,140) {\ContextTitle};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (12,133) {We welcome contributions on\ldots};
 % Four contribution topics: compact content boxes instead of verb-only labels.
-\foreach \x/\y in {12/128,94/128,12/107,94/107} {
+\foreach \x/\y in {12/113,94/113,12/92,94/92} {
   \path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=1mm] (\x,\y) rectangle +(74,18);
   \path[fill=Yellow] (\x,\y+3) rectangle +(1.2,12);
 }
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,137) {\ContributionOne};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,137) {\ContributionTwo};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,116) {\ContributionThree};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,116) {\ContributionFour};
-\path[fill=Cobalt] (0,77) rectangle (180,104);
-\node[anchor=base west,text=Yellow,font=\BodyFont\bfseries] at (12,99) {YOUR CONVENERS};
-\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (12,92) {\ConvenerOne};
-\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (94,92) {\ConvenerTwo};
-\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (12,86) {\ConvenerThree};
-\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (94,86) {\ConvenerFour};
-\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (12,80) {\ConvenerFive};
-\begin{scope}\clip (0,56) rectangle (180,77);\SceneLabelsfalse\WaterScene{0}{56}{180}{48}\end{scope}
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,122) {\ContributionOne};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,122) {\ContributionTwo};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,101) {\ContributionThree};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,101) {\ContributionFour};
+\begin{scope}\clip (0,56) rectangle (180,89);\SceneLabelsfalse\WaterScene{0}{56}{180}{48}\end{scope}
 \path[fill=Ink] (0,0) rectangle (180,56);
 % Earlier travel-support deadline receives the warm, high-contrast first panel.
 \path[fill=Yellow,rounded corners=2mm] (10,22) rectangle (92,51);
@@ -162,28 +162,28 @@
 \node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (10,96) {\href{\ConferenceURL}{\ConferenceName}};
 \node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (190,96) {\href{\SessionURL}{SESSION \SessionCode}};
 \draw[Ink!15,line width=.2mm] (10,91)--(190,91);
-\begin{scope}\clip (109,43) rectangle (200,62);\SceneLabelsfalse\WaterScene{109}{43}{91}{43}\end{scope}
-\path[fill=Cobalt] (109,62) rectangle (200,88);
-\node[anchor=base west,text=Yellow,font=\BodyFont\bfseries] at (113,83.5) {YOUR CONVENERS};
-\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (113,79.3) {\ConvenerOne};
-\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (113,75.3) {\ConvenerTwo};
-\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (113,71.3) {\ConvenerThree};
-\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (113,67.3) {\ConvenerFour};
-\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (113,63.3) {\ConvenerFive};
-\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (10,83) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
-\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (9.5,69) {\PrimaryTitle};
-\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (9.5,56) {\SecondaryTitle};
-\node[anchor=base west,text=Ink,font=\ContextFont] at (10,49) {\ContextTitle};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (10,42.3) {We welcome contributions on\ldots};
+\begin{scope}\clip (109,43) rectangle (200,77);\SceneLabelsfalse\WaterScene{109}{43}{91}{43}\end{scope}
+\path[fill=Sky!45!Cream] (0,78) rectangle (200,91);
+\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (8,87) {CONVENERS / ORCID};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (54,87) {\href{\ConvenerOneURL}{\ConvenerOne}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (132,87) {\href{\ConvenerTwoURL}{\ConvenerTwo}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (8,81) {\href{\ConvenerThreeURL}{\ConvenerThree}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (78,81) {\href{\ConvenerFourURL}{\ConvenerFour}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (165,81) {\href{\ConvenerFiveURL}{\ConvenerFive}};
+\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (109,38.8) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
+\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (9.5,65) {\PrimaryTitle};
+\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (9.5,52) {\SecondaryTitle};
+\node[anchor=base west,text=Ink,font=\ContextFont] at (10,44.5) {\ContextTitle};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (10,39) {We welcome contributions on\ldots};
 % One topic strip leaves room for the headline and the compact landscape.
 \foreach \x in {8,55,102,149} {
-  \path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=1mm] (\x,25) rectangle +(44,16);
+  \path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=1mm] (\x,25) rectangle +(44,13.5);
   \path[fill=Yellow] (\x,28) rectangle +(1,10);
 }
-\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (12,33) {\ContributionOneCompact};
-\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (59,33) {\ContributionTwo};
-\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (106,33) {\ContributionThree};
-\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (153,33) {\ContributionFour};
+\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (12,31.75) {\ContributionOneCompact};
+\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (59,31.75) {\ContributionTwo};
+\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (106,31.75) {\ContributionThree};
+\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (153,31.75) {\ContributionFour};
 \path[fill=Ink] (0,0) rectangle (200,24);
 \path[fill=Yellow,rounded corners=1.5mm] (7,1.5) rectangle (74,22.5);
 \node[anchor=base west,text=Ink,font=\BodyFont\bfseries] at (11,18) {\href{\SupportURL}{TRAVEL SUPPORT}};
