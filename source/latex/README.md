@@ -19,8 +19,8 @@ layout uses exactly three size tokens: **22 / 16 / 14 TeX pt** for Instagram and
 helpers in `campaign.sty` control every text element, including the P and ET labels.
 Change the `\UseCampaignSizes` arguments to adjust these levels; do not add separate
 caption sizes. Contribution macros use deliberate line breaks to avoid hyphenated
-words in the small boxes. `\ContributionOneCompact` holds the narrower LinkedIn
-version of the same evaluation topic.
+words in the small boxes. LinkedIn uses a wider first box so all four topics fit
+on two lines; `\ContributionOneCompact` is retained for narrower layout variants.
 
 ## Build
 

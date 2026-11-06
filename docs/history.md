@@ -60,3 +60,5 @@
 - Balanced LinkedIn’s title and illustration as aligned columns: kept the complete title on the left, split its gray continuation across two lines, and inset the rounded illustration to align with the title block and topic-strip right edge. Preserved the four topic boxes.
 
 - Removed LinkedIn deadline times, moved conference dates/location into the header and placed an initialled, ORCID-linked convener line beneath two balanced deadline panels.
+
+- Widened the first LinkedIn topic box from 44 to 50 mm so evaluation/benchmarking fits on two lines. Redistributed the remaining three boxes to preserve the strip width and equal gaps.

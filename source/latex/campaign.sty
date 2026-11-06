@@ -163,14 +163,14 @@
 \node[anchor=base west,text=black!62,font=\ContextFont] at (10,45.5) {\SubtitleTwo};
 \node[anchor=base west,text=Ink,font=\BodyFont] at (10,39.5) {We welcome contributions on\ldots};
 % One topic strip leaves room for the headline and the compact landscape.
-\foreach \x in {8,55,102,149} {
-  \path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=1mm] (\x,25) rectangle +(44,13);
+\foreach \x/\w in {8/50,61/42,106/44,153/40} {
+  \path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=1mm] (\x,25) rectangle +(\w,13);
   \path[fill=Yellow] (\x,27) rectangle +(1,8);
 }
-\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (12,31.5) {\ContributionOneCompact};
-\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (59,31.5) {\ContributionTwo};
-\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (106,31.5) {\ContributionThree};
-\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (153,31.5) {\ContributionFour};
+\node[anchor=west,text width=43mm,align=left,text=Ink,font=\BodyFont] at (12,31.5) {\ContributionOne};
+\node[anchor=west,text width=35mm,align=left,text=Ink,font=\BodyFont] at (65,31.5) {\ContributionTwo};
+\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (110,31.5) {\ContributionThree};
+\node[anchor=west,text width=33mm,align=left,text=Ink,font=\BodyFont] at (157,31.5) {\ContributionFour};
 \path[fill=Ink] (0,0) rectangle (200,24);
 \path[fill=Yellow,rounded corners=1.5mm] (7,8) rectangle (97,22.5);
 \path[fill=Cobalt!18!Ink,draw=white!25!Ink,line width=.2mm,rounded corners=1.5mm] (103,8) rectangle (193,22.5);
