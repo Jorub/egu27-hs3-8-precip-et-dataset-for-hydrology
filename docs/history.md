@@ -50,3 +50,5 @@
 - Replaced the Instagram four-card grid with one shared panel listing four topics vertically, using the existing 18 pt size for larger, unbroken topic lines.
 
 - Integrated “We welcome contributions on…” as a bold heading inside the Instagram topic panel. Reduced the middle typography size from 18 to 16 pt so the heading and topic rows share a smaller size while preserving the three-size limit.
+
+- Matched “Development, Evaluation, and Applications” to the Instagram title’s 22 pt bold typography.
