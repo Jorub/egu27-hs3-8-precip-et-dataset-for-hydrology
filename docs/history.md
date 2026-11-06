@@ -15,3 +15,4 @@
 - Moved conveners above the main website introduction and into the top of both banners; linked each name to its verified ORCID profile.
 - Refined the top-of-page convener treatment to a compact pale-blue panel with regular-weight linked names, keeping the scientific title dominant.
 - Restored the complete mountain and water-cycle illustrations by allocating separate space for the compact linked names and the artwork; removed the cropped illustration viewports.
+- Reduced the banner body tier (Instagram 10 pt, LinkedIn 9 pt), removed the name-panel fill, and placed the compact linked names below Call for abstracts with the label Convener.

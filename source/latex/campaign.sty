@@ -105,7 +105,7 @@
 }
 
 \newcommand{\InstagramArtwork}{%
-\UseCampaignSizes{44}{22}{11}%
+\UseCampaignSizes{44}{22}{10}%
 \begin{tikzpicture}[remember picture,overlay,x=1mm,y=1mm]
 \begin{scope}[shift={(current page.south west)}]
 \clip (0,0) rectangle (180,225);
@@ -113,29 +113,29 @@
 \path[fill=Yellow] (0,203)--(6,203)--(6,225)--(0,225)--cycle;
 \node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (12,212) {\href{\ConferenceURL}{\ConferenceName}};
 \node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (168,212) {\href{\SessionURL}{SESSION \SessionCode}};
-\path[fill=Sky!45!Cream] (0,190) rectangle (180,210);
-\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (12,206) {YOUR CONVENERS / ORCID};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (12,201) {\href{\ConvenerOneURL}{\ConvenerOne}};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (94,201) {\href{\ConvenerTwoURL}{\ConvenerTwo}};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (12,196) {\href{\ConvenerThreeURL}{\ConvenerThree}};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (94,196) {\href{\ConvenerFourURL}{\ConvenerFour}};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (12,191) {\href{\ConvenerFiveURL}{\ConvenerFive}};
 
-\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (12,184) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
-\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (11,170) {\PrimaryTitle};
-\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (11,156) {\SecondaryTitle};
-\node[anchor=base west,text=Ink,font=\ContextFont] at (12,147) {\ContextTitle};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (12,140) {We welcome contributions on\ldots};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (12,199) {Convener};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (12,194) {\href{\ConvenerOneURL}{\ConvenerOne}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (94,194) {\href{\ConvenerTwoURL}{\ConvenerTwo}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (12,189) {\href{\ConvenerThreeURL}{\ConvenerThree}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (94,189) {\href{\ConvenerFourURL}{\ConvenerFour}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (12,184) {\href{\ConvenerFiveURL}{\ConvenerFive}};
+
+\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (12,204) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
+\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (11,166) {\PrimaryTitle};
+\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (11,152) {\SecondaryTitle};
+\node[anchor=base west,text=Ink,font=\ContextFont] at (12,143) {\ContextTitle};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (12,137) {We welcome contributions on\ldots};
 % Four contribution topics: compact content boxes instead of verb-only labels.
-\foreach \x/\y in {12/122,94/122,12/104,94/104} {
+\foreach \x/\y in {12/120,94/120,12/102,94/102} {
   \path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=1mm] (\x,\y) rectangle +(74,16);
   \path[fill=Yellow] (\x,\y+3) rectangle +(1.2,12);
 }
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,130) {\ContributionOne};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,130) {\ContributionTwo};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,112) {\ContributionThree};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,112) {\ContributionFour};
-\SceneLabelstrue\WaterScene{0}{56}{180}{45}
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,128) {\ContributionOne};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,128) {\ContributionTwo};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,110) {\ContributionThree};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,110) {\ContributionFour};
+\SceneLabelstrue\WaterScene{0}{56}{180}{43}
 \path[fill=Ink] (0,0) rectangle (180,56);
 % Earlier travel-support deadline receives the warm, high-contrast first panel.
 \path[fill=Yellow,rounded corners=2mm] (10,22) rectangle (92,51);
@@ -153,7 +153,7 @@
 }
 
 \newcommand{\LinkedInArtwork}{%
-\UseCampaignSizes{32}{18}{10}%
+\UseCampaignSizes{32}{18}{9}%
 \begin{tikzpicture}[remember picture,overlay,x=1mm,y=1mm]
 \begin{scope}[shift={(current page.south west)}]
 \clip (0,0) rectangle (200,104.5);
@@ -163,14 +163,14 @@
 \node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (190,96) {\href{\SessionURL}{SESSION \SessionCode}};
 \draw[Ink!15,line width=.2mm] (10,91)--(190,91);
 \SceneLabelstrue\WaterScene{109}{43}{91}{34}
-\path[fill=Sky!45!Cream] (0,78) rectangle (200,91);
-\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (8,87) {CONVENERS / ORCID};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (54,87) {\href{\ConvenerOneURL}{\ConvenerOne}};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (132,87) {\href{\ConvenerTwoURL}{\ConvenerTwo}};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (8,81) {\href{\ConvenerThreeURL}{\ConvenerThree}};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (78,81) {\href{\ConvenerFourURL}{\ConvenerFour}};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (165,81) {\href{\ConvenerFiveURL}{\ConvenerFive}};
-\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (109,38.8) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
+
+\node[anchor=base west,text=Ink,font=\BodyFont] at (8,84) {Convener};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (54,84) {\href{\ConvenerOneURL}{\ConvenerOne}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (132,84) {\href{\ConvenerTwoURL}{\ConvenerTwo}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (8,79) {\href{\ConvenerThreeURL}{\ConvenerThree}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (78,79) {\href{\ConvenerFourURL}{\ConvenerFour}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (165,79) {\href{\ConvenerFiveURL}{\ConvenerFive}};
+\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (8,89) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
 \node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (9.5,65) {\PrimaryTitle};
 \node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (9.5,52) {\SecondaryTitle};
 \node[anchor=base west,text=Ink,font=\ContextFont] at (10,44.5) {\ContextTitle};

@@ -312,3 +312,10 @@ h2 { font-size: var(--size-heading); letter-spacing: -.035em; font-weight: 700; 
 .convener-list { display: flex; flex-wrap: wrap; gap: 12px 28px; margin: 12px 0; font-size: var(--size-body); font-weight: 400; line-height: 1.5; }
 .convener-list a:hover { color: var(--blue); }
 @media(max-width:600px) { .conveners-section { padding: 18px 20px; } .convener-list { display: flex; gap: 8px 20px; } .convener-list li { margin: 0; } }
+
+/* Subtle linked byline below the call for abstracts. */
+.conveners-section { padding: 24px 0 0; margin-block: 0; background: transparent; color: var(--ink); border: 0; }
+#conveners-title { margin-top: 14px; text-transform: none; font-weight: 400; letter-spacing: 0; color: var(--muted); }
+.convener-list { margin-top: 6px; gap: 6px 24px; }
+.conveners-section .text-link { display: none; }
+@media(max-width:600px) { .conveners-section { padding: 20px 0 0; } }
