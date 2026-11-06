@@ -9,3 +9,4 @@
 - Added embedded session/support links and highlighted the 1 December 2026, 13:00 CET deadline for Roland Schlich travel support, separately from the 12 January 2027 abstract deadline.
 - The owner preferred the strong blue/yellow palette, one font family and no more than three size levels. Replaced the verb-only themes with four compact contribution topics to retain scientific specificity.
 - Prepared a GitHub Pages deployment workflow. Publishing status is established by the actual repository and deployment, not by this history entry.
+- Corrected co-convener André Simões Ballarin’s full name in the website and share copy following the owner’s correction.
