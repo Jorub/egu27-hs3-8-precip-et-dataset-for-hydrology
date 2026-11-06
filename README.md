@@ -47,7 +47,7 @@ The build compiles both LaTeX layouts and exports **1080 × 1350** and **1200 ×
 
 If EGU changes the session identifier after a merger, update the artwork content fields, web settings/fallback and share copy. The repository name chosen for this campaign can remain a stable address.
 
-The PDFs contain clickable session and travel-support links. A PNG cannot contain a clickable hyperlink; use the corresponding caption link, Instagram profile link or Story sticker. Alt text is included in `output/alt-text.txt` and the website downloads.
+Instagram includes labelled QR codes for session/abstract submission and travel-support information, generated as vectors by the LaTeX qrcode package. The PDFs contain clickable session and travel-support links. A PNG cannot contain a clickable hyperlink; use the corresponding caption link, Instagram profile link or Story sticker. Alt text is included in `output/alt-text.txt` and the website downloads.
 
 The website includes locally served TeX Gyre Heros webfonts in `site/assets/fonts/`, with their GUST Font License and provenance. Those assets require no external font service.
 
