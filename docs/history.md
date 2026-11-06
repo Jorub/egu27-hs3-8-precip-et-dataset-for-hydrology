@@ -34,3 +34,5 @@
 - Reduced Instagram deadline text to the existing 14 pt body size so each complete date, including the year, fits on one line beside its QR code.
 
 - Tightened Instagram deadline panels from 35 to 27 mm height and positioned their headings directly above the full dates; returned the saved space to the illustration.
+
+- Reduced the Instagram title sizes to 24/20 pt while retaining 14 pt body text; tightened the gap to the contribution introduction and moved the topic boxes up to give the landscape more room.
