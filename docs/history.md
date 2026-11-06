@@ -30,3 +30,5 @@
 - Refined the Instagram footer into two matched horizontal deadline panels, aligning dates on the left and QR codes on the right, with consistent padding and more space around the conference line.
 
 - Placed compact Instagram deadline panels side by side, with day/month and year split beside each QR code, and restored the water-cycle illustration to 52 mm height for less compressed mountains and river.
+
+- Reduced Instagram deadline text to the existing 14 pt body size so each complete date, including the year, fits on one line beside its QR code.
