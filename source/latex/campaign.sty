@@ -1,0 +1,186 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{campaign}[2026/11/06 Editable EGU27 promotion artwork]
+\RequirePackage[T1]{fontenc}
+\RequirePackage{tgheros}
+\RequirePackage{xcolor}
+\RequirePackage{tikz}
+\RequirePackage{hyperref}
+\usetikzlibrary{arrows.meta,calc}
+\renewcommand{\familydefault}{\sfdefault}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\definecolor{Ink}{HTML}{072D43}
+\definecolor{Cobalt}{HTML}{145DCE}
+\definecolor{Cyan}{HTML}{32B6D8}
+\definecolor{Teal}{HTML}{078C86}
+\definecolor{Mint}{HTML}{A6DBBD}
+\definecolor{Cream}{HTML}{FFF7E8}
+\definecolor{Yellow}{HTML}{F8D64E}
+\definecolor{Sky}{HTML}{D8EFF5}
+\input{content.tex}
+\hypersetup{hidelinks,pdftitle={Precipitation and Evapotranspiration Datasets for Hydrological Studies: Development, Evaluation, and Applications},pdfauthor={EGU27 session conveners},pdfsubject={Call for abstracts; editable LaTeX and TikZ artwork}}
+
+% Three size tokens per layout; every text element uses one of these helpers.
+% Leading controls line spacing only and does not introduce another font size.
+\newcommand{\UseCampaignSizes}[3]{%
+  \def\HeadlinePoints{#1}\def\ContextPoints{#2}\def\BodyPoints{#3}%
+  \pgfmathsetmacro{\HeadlineLeading}{#1*1.05}%
+  \pgfmathsetmacro{\ContextLeading}{#2*1.1}%
+  \pgfmathsetmacro{\BodyLeading}{#3*1.18}%
+}
+\newcommand{\HeadlineFont}{\fontsize{\HeadlinePoints}{\HeadlineLeading}\selectfont}
+\newcommand{\ContextFont}{\fontsize{\ContextPoints}{\ContextLeading}\selectfont}
+\newcommand{\BodyFont}{\fontsize{\BodyPoints}{\BodyLeading}\selectfont}
+
+% Original vector illustration. Geometry and labels are live TikZ elements.
+% Arguments: lower-left x, lower-left y, width, height (all in mm).
+\newcommand{\WaterScene}[4]{%
+  \begin{scope}[shift={(#1,#2)},xscale=#3/180,yscale=#4/80]
+    \clip (0,0) rectangle (180,80);
+    \path[fill=Sky] (0,0) rectangle (180,80);
+    % Compensate for scene aspect ratio so the sun remains circular in each layout.
+    \pgfmathsetmacro{\SunRadius}{min(15*(#3/180),.19*#4)}
+    \pgfmathsetmacro{\SunHorizontalRadius}{\SunRadius/(#3/180)}
+    \pgfmathsetmacro{\SunVerticalRadius}{\SunRadius/(#4/80)}
+    \path[fill=Yellow] (151,59) ellipse [x radius=\SunHorizontalRadius mm,y radius=\SunVerticalRadius mm];
+    % A small data-grid motif recalls the gridded products behind the scene.
+    \foreach \x in {8,15,22,29,36} {
+      \foreach \y in {12,19,26} {
+        \draw[draw=Cobalt!35,line width=.22mm] (\x,\y) rectangle +(5.4,5.4);
+      }
+    }
+    \path[fill=Cobalt!18] (8,19) rectangle +(5.4,5.4);
+    \path[fill=Cyan!65] (15,26) rectangle +(5.4,5.4);
+    \path[fill=Cobalt!50] (22,12) rectangle +(5.4,5.4);
+    \path[fill=Teal!50] (29,19) rectangle +(5.4,5.4);
+    % Distant mountains.
+    \path[fill=Cobalt!72] (59,0)--(108,61)--(126,40)--(153,65)--(192,14)--(192,0)--cycle;
+    \path[fill=Cobalt] (95,0)--(128,49)--(140,35)--(162,57)--(194,13)--(194,0)--cycle;
+    \path[fill=white] (108,61)--(98,48)--(107,51)--(113,45)--(118,49)--cycle;
+    \path[fill=white!90!Sky] (153,65)--(142,52)--(151,55)--(157,50)--(163,52)--cycle;
+    % Layered catchment hills.
+    \path[fill=Mint] (0,20) .. controls (27,37) and (50,39) .. (76,27)
+      .. controls (107,14) and (146,40) .. (180,28)--(180,0)--(0,0)--cycle;
+    \path[fill=Teal] (0,9) .. controls (29,21) and (48,28) .. (76,19)
+      .. controls (100,11) and (130,29) .. (180,17)--(180,0)--(0,0)--cycle;
+    \path[fill=Ink!88!Teal] (0,0)--(0,6)
+      .. controls (31,15) and (57,18) .. (76,12)
+      .. controls (106,3) and (130,17) .. (180,7)--(180,0)--cycle;
+    % River broadens toward the viewer.
+    \path[fill=Cyan] (84,28) .. controls (83,23) and (102,23) .. (101,17)
+      .. controls (100,11) and (78,11) .. (76,6)
+      .. controls (75,3) and (81,1) .. (85,0)
+      --(119,0) .. controls (102,6) and (97,6) .. (100,10)
+      .. controls (104,15) and (113,17) .. (108,22)
+      .. controls (104,26) and (89,26) .. (87,28)--cycle;
+    \draw[white!65!Cyan,line width=.55mm] (86,27)
+      .. controls (86,23) and (106,24) .. (105,19)
+      .. controls (104,14) and (86,11) .. (86,7)
+      .. controls (85,4) and (92,1) .. (99,0);
+    % Stylised trees: entirely editable shapes.
+    \foreach \x/\y/\s in {113/18/1,122/22/.8,131/25/1.1,143/22/1,158/19/1.2,170/17/.9} {
+      \begin{scope}[shift={(\x,\y)},scale=\s]
+        \draw[Ink,line width=.5mm] (0,-3)--(0,3);
+        \path[fill=Ink] (-3.4,0)--(0,7)--(3.4,0)--cycle;
+      \end{scope}
+    }
+    % Rain cloud and precipitation.
+    \path[fill=white] (22,58) ellipse (17 and 7);
+    \path[fill=white] (36,61) ellipse (16 and 9);
+    \path[fill=white] (50,58) ellipse (13 and 7);
+    \draw[white,line width=1.6mm,line cap=round] (15,56)--(52,56);
+    \foreach \x in {18,28,38,48} {
+      \draw[Cobalt,line width=.9mm,line cap=round] (\x,47)--+( -3,-7);
+      \draw[Cyan,line width=.9mm,line cap=round] (\x-1,35)--+(-2,-5);
+    }
+    \node[fill=Yellow,text=Ink,rounded corners=2.4mm,inner xsep=2.9mm,inner ysep=1.5mm,font=\BodyFont\bfseries] at (63,42) {P};
+    % Upward ET arrows are deliberately wavy rather than straight rainfall.
+    \foreach \x in {130,143,156} {
+      \draw[Yellow,line width=1.1mm,-{Stealth[length=3.2mm,width=2.8mm]},line cap=round]
+        (\x,33) .. controls (\x-6,41) and (\x+5,44) .. (\x,55);
+    }
+    \node[fill=Ink,text=white,rounded corners=2.4mm,inner xsep=2.5mm,inner ysep=1.5mm,font=\BodyFont\bfseries] at (161,37) {ET};
+  \end{scope}%
+}
+
+\newcommand{\InstagramArtwork}{%
+\UseCampaignSizes{44}{22}{11}%
+\begin{tikzpicture}[remember picture,overlay,x=1mm,y=1mm]
+\begin{scope}[shift={(current page.south west)}]
+\clip (0,0) rectangle (180,225);
+\path[fill=Cream] (0,0) rectangle (180,225);
+\path[fill=Yellow] (0,203)--(6,203)--(6,225)--(0,225)--cycle;
+\node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (12,212) {\href{\ConferenceURL}{\ConferenceName}};
+\node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (168,212) {\href{\SessionURL}{SESSION \SessionCode}};
+\draw[Ink!15,line width=.25mm] (12,204)--(168,204);
+\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (12,194) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
+\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (11,179) {\PrimaryTitle};
+\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (11,164) {\SecondaryTitle};
+\node[anchor=base west,text=Ink,font=\ContextFont] at (12,155) {\ContextTitle};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (12,148) {We welcome contributions on\ldots};
+% Four contribution topics: compact content boxes instead of verb-only labels.
+\foreach \x/\y in {12/128,94/128,12/107,94/107} {
+  \path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=1mm] (\x,\y) rectangle +(74,18);
+  \path[fill=Yellow] (\x,\y+3) rectangle +(1.2,12);
+}
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,137) {\ContributionOne};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,137) {\ContributionTwo};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,116) {\ContributionThree};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,116) {\ContributionFour};
+\WaterScene{0}{56}{180}{48}
+\path[fill=Ink] (0,0) rectangle (180,56);
+% Earlier travel-support deadline receives the warm, high-contrast first panel.
+\path[fill=Yellow,rounded corners=2mm] (10,22) rectangle (92,51);
+\node[anchor=base west,text=Ink,font=\BodyFont\bfseries] at (14,44) {\href{\SupportURL}{TRAVEL SUPPORT}};
+\node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (14,33) {\href{\SupportURL}{\SupportDeadlineDate}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (14,25) {\href{\SupportURL}{\SupportDeadlineTime}};
+\node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (101,44) {\href{\SessionURL}{ABSTRACTS}};
+\node[anchor=base west,text=white,font=\ContextFont\bfseries] at (101,33) {\href{\SessionURL}{\DeadlineDate}};
+\node[anchor=base west,text=white,font=\BodyFont] at (101,25) {\href{\SessionURL}{\DeadlineTime}};
+\draw[white!30!Ink,line width=.2mm] (12,19)--(168,19);
+\node[anchor=base west,text=white,font=\BodyFont] at (12,10.5) {\href{\ConferenceURL}{\ConferenceLine}};
+\node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (12,4) {\href{\SessionURL}{\WebsiteLine}};
+\end{scope}
+\end{tikzpicture}%
+}
+
+\newcommand{\LinkedInArtwork}{%
+\UseCampaignSizes{32}{18}{10}%
+\begin{tikzpicture}[remember picture,overlay,x=1mm,y=1mm]
+\begin{scope}[shift={(current page.south west)}]
+\clip (0,0) rectangle (200,104.5);
+\path[fill=Cream] (0,0) rectangle (200,104.5);
+\path[fill=Yellow] (0,88)--(5,88)--(5,104.5)--(0,104.5)--cycle;
+\node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (10,96) {\href{\ConferenceURL}{\ConferenceName}};
+\node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (190,96) {\href{\SessionURL}{SESSION \SessionCode}};
+\draw[Ink!15,line width=.2mm] (10,91)--(190,91);
+\WaterScene{109}{43}{91}{43}
+\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (10,83) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
+\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (9.5,69) {\PrimaryTitle};
+\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (9.5,56) {\SecondaryTitle};
+\node[anchor=base west,text=Ink,font=\ContextFont] at (10,49) {\ContextTitle};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (10,42.3) {We welcome contributions on\ldots};
+% One topic strip leaves room for the headline and the compact landscape.
+\foreach \x in {8,55,102,149} {
+  \path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=1mm] (\x,25) rectangle +(44,16);
+  \path[fill=Yellow] (\x,28) rectangle +(1,10);
+}
+\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (12,33) {\ContributionOneCompact};
+\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (59,33) {\ContributionTwo};
+\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (106,33) {\ContributionThree};
+\node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (153,33) {\ContributionFour};
+\path[fill=Ink] (0,0) rectangle (200,24);
+\path[fill=Yellow,rounded corners=1.5mm] (7,1.5) rectangle (74,22.5);
+\node[anchor=base west,text=Ink,font=\BodyFont\bfseries] at (11,18) {\href{\SupportURL}{TRAVEL SUPPORT}};
+\node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (11,10) {\href{\SupportURL}{\SupportDeadlineDate}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (11,4) {\href{\SupportURL}{\SupportDeadlineTime}};
+\node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (82,18) {\href{\SessionURL}{ABSTRACTS}};
+\node[anchor=base west,text=white,font=\ContextFont\bfseries] at (82,10) {\href{\SessionURL}{\DeadlineDate}};
+\node[anchor=base west,text=white,font=\BodyFont] at (82,4) {\href{\SessionURL}{\DeadlineTime}};
+\draw[white!30!Ink,line width=.2mm] (139,4)--(139,21);
+\node[anchor=base west,text=white,font=\BodyFont] at (147,18) {\href{\ConferenceURL}{4--9 April 2027}};
+\node[anchor=base west,text=white,font=\BodyFont] at (147,11) {\href{\ConferenceURL}{Vienna \& online}};
+\node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (147,4) {\href{\SessionURL}{Session details}};
+\end{scope}
+\end{tikzpicture}%
+}

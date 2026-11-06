@@ -1,0 +1,17 @@
+.DS_Store
+config.local.json
+outreach/graphics/
+site/assets/fonts/*.otf
+.env
+.env.*
+!.env.example
+tmp/
+__pycache__/
+*.pyc
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
