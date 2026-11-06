@@ -44,3 +44,5 @@
 - Moved Instagram conference dates and location beneath the EGU27 header, removed the footer duplicate and reclaimed the footer space for the mountain/river illustration.
 
 - Reflowed the Instagram main session title into two lines, breaking before “Datasets”, while preserving its 22 pt size and blue emphasis.
+
+- Added a modest two-line Instagram convener credit below the four topics, with given-name initials and clickable ORCID links on the names. Reserved separate space above the illustration to keep the mountains unobscured.

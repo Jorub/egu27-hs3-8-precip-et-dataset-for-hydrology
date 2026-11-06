@@ -1,6 +1,6 @@
 # Convener ORCID links
 
-Verified against public researcher or publication records on 6 November 2026. Names are linked directly on the website. The banners were restored to the earlier design without convener names.
+Verified against public researcher or publication records on 6 November 2026. Names are linked directly on the website. Instagram now includes a restrained convener credit below the topic boxes, using given-name initials and linked names in the PDF. LinkedIn remains without convener names.
 
 | Convener | ORCID | Supporting record |
 | --- | --- | --- |
