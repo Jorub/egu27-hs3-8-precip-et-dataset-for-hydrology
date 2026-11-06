@@ -149,12 +149,17 @@
 \node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (10,96) {\href{\ConferenceURL}{\ConferenceName}};
 \node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (190,96) {\href{\SessionURL}{SESSION \SessionCode}};
 \draw[Ink!15,line width=.2mm] (10,91)--(190,91);
-\WaterScene{122}{54}{78}{32}
+% Align the complete title block and illustration to the same top/bottom edges.
+\begin{scope}
+\clip[rounded corners=2mm] (115,45.5) rectangle (193,80.5);
+\WaterScene{115}{45.5}{78}{35}
+\end{scope}
 \node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (10,83) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
 \node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (10,75.5) {\PrimaryTitle};
-\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (10,67) {\SecondaryTitle{} Datasets};
-\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (10,58.5) {\ContextTitle};
-\node[anchor=base west,text=Ink,font=\ContextFont] at (10,48) {\SubtitleOne{} \SubtitleTwo};
+\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (10,68.5) {\SecondaryTitle{} Datasets};
+\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (10,61.5) {\ContextTitle};
+\node[anchor=base west,text=black!62,font=\ContextFont] at (10,52.5) {\SubtitleOne};
+\node[anchor=base west,text=black!62,font=\ContextFont] at (10,45.5) {\SubtitleTwo};
 \node[anchor=base west,text=Ink,font=\BodyFont] at (10,39.5) {We welcome contributions on\ldots};
 % One topic strip leaves room for the headline and the compact landscape.
 \foreach \x in {8,55,102,149} {
