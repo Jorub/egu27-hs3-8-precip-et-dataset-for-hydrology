@@ -58,3 +58,5 @@
 - Reduced LinkedIn main-title size from 20 to 19 pt, reflowed it into three lines and narrowed the illustration from 91 to 78 mm. Preserved the four topic boxes and footer.
 
 - Balanced LinkedIn’s title and illustration as aligned columns: kept the complete title on the left, split its gray continuation across two lines, and inset the rounded illustration to align with the title block and topic-strip right edge. Preserved the four topic boxes.
+
+- Removed LinkedIn deadline times, moved conference dates/location into the header and placed an initialled, ORCID-linked convener line beneath two balanced deadline panels.

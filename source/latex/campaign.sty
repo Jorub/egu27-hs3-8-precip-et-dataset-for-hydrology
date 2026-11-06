@@ -148,6 +148,7 @@
 \path[fill=Yellow] (0,88)--(5,88)--(5,104.5)--(0,104.5)--cycle;
 \node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (10,96) {\href{\ConferenceURL}{\ConferenceName}};
 \node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (190,96) {\href{\SessionURL}{SESSION \SessionCode}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (48,96) {\href{\ConferenceURL}{\ConferenceLine}};
 \draw[Ink!15,line width=.2mm] (10,91)--(190,91);
 % Align the complete title block and illustration to the same top/bottom edges.
 \begin{scope}
@@ -171,17 +172,13 @@
 \node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (106,31.5) {\ContributionThree};
 \node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (153,31.5) {\ContributionFour};
 \path[fill=Ink] (0,0) rectangle (200,24);
-\path[fill=Yellow,rounded corners=1.5mm] (7,1.5) rectangle (74,22.5);
+\path[fill=Yellow,rounded corners=1.5mm] (7,8) rectangle (97,22.5);
+\path[fill=Cobalt!18!Ink,draw=white!25!Ink,line width=.2mm,rounded corners=1.5mm] (103,8) rectangle (193,22.5);
 \node[anchor=base west,text=Ink,font=\BodyFont\bfseries] at (11,18) {\href{\SupportURL}{TRAVEL SUPPORT}};
 \node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (11,10) {\href{\SupportURL}{\SupportDeadlineDate}};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (11,4) {\href{\SupportURL}{\SupportDeadlineTime}};
-\node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (82,18) {\href{\SessionURL}{ABSTRACTS}};
-\node[anchor=base west,text=white,font=\ContextFont\bfseries] at (82,10) {\href{\SessionURL}{\DeadlineDate}};
-\node[anchor=base west,text=white,font=\BodyFont] at (82,4) {\href{\SessionURL}{\DeadlineTime}};
-\draw[white!30!Ink,line width=.2mm] (139,4)--(139,21);
-\node[anchor=base west,text=white,font=\BodyFont] at (147,18) {\href{\ConferenceURL}{4--9 April 2027}};
-\node[anchor=base west,text=white,font=\BodyFont] at (147,11) {\href{\ConferenceURL}{Vienna \& online}};
-\node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (147,4) {\href{\SessionURL}{Session details}};
+\node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (107,18) {\href{\SessionURL}{ABSTRACTS}};
+\node[anchor=base west,text=white,font=\ContextFont\bfseries] at (107,10) {\href{\SessionURL}{\DeadlineDate}};
+\node[anchor=base west,text=white,font=\BodyFont] at (10,2.5) {\ConvenerLineOne\enspace\textperiodcentered\enspace\ConvenerLineTwo};
 \end{scope}
 \end{tikzpicture}%
 }
