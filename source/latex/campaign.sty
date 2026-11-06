@@ -140,7 +140,7 @@
 }
 
 \newcommand{\LinkedInArtwork}{%
-\UseCampaignSizes{20}{18}{10}%
+\UseCampaignSizes{19}{18}{10}%
 \begin{tikzpicture}[remember picture,overlay,x=1mm,y=1mm]
 \begin{scope}[shift={(current page.south west)}]
 \clip (0,0) rectangle (200,104.5);
@@ -149,13 +149,12 @@
 \node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (10,96) {\href{\ConferenceURL}{\ConferenceName}};
 \node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (190,96) {\href{\SessionURL}{SESSION \SessionCode}};
 \draw[Ink!15,line width=.2mm] (10,91)--(190,91);
-\WaterScene{109}{50.5}{91}{35.5}
+\WaterScene{122}{54}{78}{32}
 \node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (10,83) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
 \node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (10,75.5) {\PrimaryTitle};
-\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (10,68) {\SecondaryTitle};
-\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (10,60.5) {Datasets for Hydrological};
-\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (10,53) {Studies:};
-\node[anchor=base west,text=Ink,font=\ContextFont] at (10,44.5) {\SubtitleOne{} \SubtitleTwo};
+\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (10,67) {\SecondaryTitle{} Datasets};
+\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (10,58.5) {\ContextTitle};
+\node[anchor=base west,text=Ink,font=\ContextFont] at (10,48) {\SubtitleOne{} \SubtitleTwo};
 \node[anchor=base west,text=Ink,font=\BodyFont] at (10,39.5) {We welcome contributions on\ldots};
 % One topic strip leaves room for the headline and the compact landscape.
 \foreach \x in {8,55,102,149} {

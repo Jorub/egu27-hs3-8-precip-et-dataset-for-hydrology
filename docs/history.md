@@ -54,3 +54,5 @@
 - Matched “Development, Evaluation, and Applications” to the Instagram title’s 22 pt bold typography.
 
 - Softened the Instagram “Development, Evaluation, and Applications” line to dark gray while preserving its title size and bold weight.
+
+- Reduced LinkedIn main-title size from 20 to 19 pt, reflowed it into three lines and narrowed the illustration from 91 to 78 mm. Preserved the four topic boxes and footer.
