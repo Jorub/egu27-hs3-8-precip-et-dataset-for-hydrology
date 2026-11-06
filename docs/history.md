@@ -26,3 +26,5 @@
 - Added small labelled vector QR codes to the Instagram footer for abstract submission/session information and travel support, retaining clickable PDF links and the three-size typography system.
 
 - Integrated Instagram QR codes into the corresponding travel-support and abstract deadline panels and removed the displayed deadline times from this banner.
+
+- Refined the Instagram footer into two matched horizontal deadline panels, aligning dates on the left and QR codes on the right, with consistent padding and more space around the conference line.
