@@ -14,8 +14,8 @@ merging, update `\SessionCode` and `\SessionURL` in `content.tex` and rebuild.
 Update the web content separately through the repository's documented web workflow.
 
 The single font family is **TeX Gyre Heros**, in regular and bold weights. Each
-layout uses exactly three size tokens: **44 / 22 / 11 TeX pt** for Instagram and
-**32 / 18 / 10 TeX pt** for LinkedIn. The headline, context/deadlines and body
+layout uses exactly three size tokens: **26 / 22 / 11 TeX pt** for Instagram and
+**20 / 18 / 10 TeX pt** for LinkedIn. The headline, context/deadlines and body
 helpers in `campaign.sty` control every text element, including the P and ET labels.
 Change the `\UseCampaignSizes` arguments to adjust these levels; do not add separate
 caption sizes. Contribution macros use deliberate line breaks to avoid hyphenated
