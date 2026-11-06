@@ -48,3 +48,5 @@
 - Added a modest two-line Instagram convener credit below the four topics, with given-name initials and clickable ORCID links on the names. Reserved separate space above the illustration to keep the mountains unobscured.
 
 - Replaced the Instagram four-card grid with one shared panel listing four topics vertically, using the existing 18 pt size for larger, unbroken topic lines.
+
+- Integrated “We welcome contributions on…” as a bold heading inside the Instagram topic panel. Reduced the middle typography size from 18 to 16 pt so the heading and topic rows share a smaller size while preserving the three-size limit.
