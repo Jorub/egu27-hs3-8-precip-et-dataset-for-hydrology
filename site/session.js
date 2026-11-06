@@ -25,4 +25,4 @@ document.querySelectorAll('[data-support-deadline]').forEach((element) => {
   element.textContent = session.supportDeadline;
   element.dateTime = session.supportDeadlineIso;
 });
-document.title = `Precipitation & ET data · EGU27 ${session.code}`;
+document.title = `Precipitation and Evapotranspiration Datasets for Hydrological Studies: Development, Evaluation, and Applications · EGU27 ${session.code}`;

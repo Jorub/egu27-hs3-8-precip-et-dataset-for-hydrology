@@ -21,7 +21,7 @@
 
 :root {
   --font-family: 'TeX Gyre Heros', Arial, sans-serif;
-  --size-display: clamp(3rem, 6.6vw, 6rem);
+  --size-display: clamp(2rem, 3.1vw, 3rem);
   --size-heading: 2rem;
   --size-body: 1rem;
   --navy: #072d43;
@@ -100,8 +100,8 @@ img { display: block; max-width: 100%; height: auto; }
 h1 {
   font-size: var(--size-display);
   font-weight: 700;
-  line-height: 1;
-  letter-spacing: -.055em;
+  line-height: 1.12;
+  letter-spacing: -.025em;
   max-width: 720px;
 }
 
@@ -246,7 +246,7 @@ h2 { font-size: var(--size-heading); letter-spacing: -.035em; font-weight: 700; 
 }
 
 @media (max-width: 600px) {
-  :root { --size-display: clamp(3rem, 13vw, 4.8rem); }
+  :root { --size-display: clamp(2rem, 7.8vw, 2.5rem); }
   .shell { width: calc(100% - 40px); }
   .site-header { min-height: 85px; }
   .wordmark-rule { margin-inline: 12px; }
