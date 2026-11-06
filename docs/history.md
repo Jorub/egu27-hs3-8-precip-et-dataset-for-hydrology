@@ -28,3 +28,5 @@
 - Integrated Instagram QR codes into the corresponding travel-support and abstract deadline panels and removed the displayed deadline times from this banner.
 
 - Refined the Instagram footer into two matched horizontal deadline panels, aligning dates on the left and QR codes on the right, with consistent padding and more space around the conference line.
+
+- Placed compact Instagram deadline panels side by side, with day/month and year split beside each QR code, and restored the water-cycle illustration to 52 mm height for less compressed mountains and river.

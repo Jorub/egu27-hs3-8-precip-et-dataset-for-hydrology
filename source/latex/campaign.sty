@@ -119,20 +119,20 @@
 \node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,135) {\ContributionTwo};
 \node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,114) {\ContributionThree};
 \node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,114) {\ContributionFour};
-\WaterScene{0}{67}{180}{35}
-\path[fill=Ink] (0,0) rectangle (180,67);
-% Matched horizontal deadline panels: text left, associated QR right.
-\path[fill=Yellow,rounded corners=2mm] (12,39) rectangle (168,64);
-\path[fill=Cobalt!18!Ink,draw=white!25!Ink,line width=.2mm,rounded corners=2mm] (12,12) rectangle (168,37);
-\node[anchor=base west,text=Ink,font=\BodyFont\bfseries] at (18,56) {\href{\SupportURL}{TRAVEL SUPPORT}};
-\node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (18,45) {\href{\SupportURL}{\SupportDeadlineDate}};
-\node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (18,29) {\href{\SessionURL}{ABSTRACTS}};
-\node[anchor=base west,text=white,font=\ContextFont\bfseries] at (18,18) {\href{\SessionURL}{\DeadlineDate}};
-\draw[Ink!18!Yellow,line width=.2mm] (137,43)--(137,60);
-\draw[white!25!Ink,line width=.2mm] (137,16)--(137,33);
-% Four-module white quiet zones are retained at the original scannable size.
-\node[anchor=south,fill=white,inner sep=0pt,text=black] at (153,41) {\qrcode[height=17mm,padding,level=L]{\SupportURL}};
-\node[anchor=south,fill=white,inner sep=0pt,text=black] at (153,14) {\qrcode[height=17mm,padding,level=L]{\SessionURL}};
+\WaterScene{0}{50}{180}{52}
+\path[fill=Ink] (0,0) rectangle (180,50);
+% Compact paired panels leave more height for the mountain/river scene.
+\path[fill=Yellow,rounded corners=2mm] (12,12) rectangle (88,47);
+\path[fill=Cobalt!18!Ink,draw=white!25!Ink,line width=.2mm,rounded corners=2mm] (92,12) rectangle (168,47);
+\node[anchor=base west,text=Ink,font=\BodyFont\bfseries] at (16,40) {\href{\SupportURL}{TRAVEL SUPPORT}};
+\node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (16,27) {\href{\SupportURL}{\SupportDeadlineDayMonth}};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (16,18) {\href{\SupportURL}{\SupportDeadlineYear}};
+\node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (96,40) {\href{\SessionURL}{ABSTRACTS}};
+\node[anchor=base west,text=white,font=\ContextFont\bfseries] at (96,27) {\href{\SessionURL}{\DeadlineDayMonth}};
+\node[anchor=base west,text=white,font=\BodyFont] at (96,18) {\href{\SessionURL}{\DeadlineYear}};
+% Preserve the verified code size and four-module white quiet zones.
+\node[anchor=south,fill=white,inner sep=0pt,text=black] at (75,15) {\qrcode[height=17mm,padding,level=L]{\SupportURL}};
+\node[anchor=south,fill=white,inner sep=0pt,text=black] at (155,15) {\qrcode[height=17mm,padding,level=L]{\SessionURL}};
 \node[anchor=base west,text=white,font=\BodyFont] at (12,5) {\href{\ConferenceURL}{\ConferenceLine}};
 \end{scope}
 \end{tikzpicture}%
