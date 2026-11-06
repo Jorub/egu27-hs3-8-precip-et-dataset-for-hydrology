@@ -106,21 +106,20 @@
 \node[anchor=base west,text=Ink,font=\BodyFont] at (12,206) {\href{\ConferenceURL}{\ConferenceLine}};
 \draw[Ink!15,line width=.25mm] (12,201)--(168,201);
 \node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (12,194) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
-\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (12,183) {\PrimaryTitle};
-\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (12,174) {\SecondaryTitle{} Datasets};
-\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (12,165) {\ContextTitle};
-\node[anchor=base west,text=Ink,font=\ContextFont] at (12,157) {\SubtitleOne{} \SubtitleTwo};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (12,147.5) {We welcome contributions on\ldots};
+\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (12,183) {\PrimaryTitle{} \textcolor{Cobalt}{\SecondaryTitle}};
+\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (12,174) {\textcolor{Cobalt}{Datasets} \ContextTitle};
+\node[anchor=base west,text=Ink,font=\ContextFont] at (12,166) {\SubtitleOne{} \SubtitleTwo};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (12,156.5) {We welcome contributions on\ldots};
 % Four contribution topics: compact content boxes instead of verb-only labels.
-\foreach \x/\y in {12/128,94/128,12/107,94/107} {
+\foreach \x/\y in {12/137,94/137,12/116,94/116} {
   \path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=1mm] (\x,\y) rectangle +(74,18);
   \path[fill=Yellow] (\x,\y+3) rectangle +(1.2,12);
 }
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,137) {\ContributionOne};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,137) {\ContributionTwo};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,116) {\ContributionThree};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,116) {\ContributionFour};
-\WaterScene{0}{36}{180}{68}
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,146) {\ContributionOne};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,146) {\ContributionTwo};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,125) {\ContributionThree};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,125) {\ContributionFour};
+\WaterScene{0}{36}{180}{77}
 \path[fill=Ink] (0,0) rectangle (180,36);
 % Compact paired panels leave more height for the mountain/river scene.
 \path[fill=Yellow,rounded corners=2mm] (12,6) rectangle (88,33);

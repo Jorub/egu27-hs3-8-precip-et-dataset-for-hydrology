@@ -42,3 +42,5 @@
 - Moved the Instagram contribution introduction and four topic boxes down together by 5 mm to create clearer separation below the session title.
 
 - Moved Instagram conference dates and location beneath the EGU27 header, removed the footer duplicate and reclaimed the footer space for the mountain/river illustration.
+
+- Reflowed the Instagram main session title into two lines, breaking before “Datasets”, while preserving its 22 pt size and blue emphasis.
