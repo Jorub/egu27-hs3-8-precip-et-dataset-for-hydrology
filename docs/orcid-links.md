@@ -1,6 +1,6 @@
 # Convener ORCID links
 
-Verified against public researcher or publication records on 6 November 2026. Names are linked directly on the website and in the editable PDF banners; PNG exports use the same visible names but cannot contain clickable links.
+Verified against public researcher or publication records on 6 November 2026. Names are linked directly on the website. The banners were restored to the earlier design without convener names.
 
 | Convener | ORCID | Supporting record |
 | --- | --- | --- |
@@ -10,4 +10,4 @@ Verified against public researcher or publication records on 6 November 2026. Na
 | Oscar Manuel Baez Villanueva | [0000-0002-2262-1698](https://orcid.org/0000-0002-2262-1698) | [ORCID public record](https://orcid.org/0000-0002-2262-1698) |
 | Chiyuan Miao | [0000-0001-6413-7020](https://orcid.org/0000-0001-6413-7020) | [Publisher's article PDF](https://www.nature.com/articles/s43247-026-03330-4_reference.pdf) |
 
-Update links in `source/latex/content.tex` and `site/index.html`, then rebuild downloads.
+Update the website links in `site/index.html`.
