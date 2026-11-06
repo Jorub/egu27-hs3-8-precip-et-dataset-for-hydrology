@@ -52,3 +52,5 @@
 - Integrated “We welcome contributions on…” as a bold heading inside the Instagram topic panel. Reduced the middle typography size from 18 to 16 pt so the heading and topic rows share a smaller size while preserving the three-size limit.
 
 - Matched “Development, Evaluation, and Applications” to the Instagram title’s 22 pt bold typography.
+
+- Softened the Instagram “Development, Evaluation, and Applications” line to dark gray while preserving its title size and bold weight.
