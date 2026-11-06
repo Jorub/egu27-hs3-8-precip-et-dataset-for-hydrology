@@ -21,3 +21,4 @@
 - Removed the decorative illustration caption and changed the website hero to the full approved session title at a smaller responsive display size. Social banner artwork remains the restored pre-name version.
 - Removed the partially obscured decorative grid beneath the rainfall in both banner illustrations and refreshed their website previews and editable downloads.
 - Replaced the abbreviated titles in both social banners with the full approved session title and adjusted headline sizes (Instagram 26 pt, LinkedIn 20 pt), retaining three sizes and the existing illustration and deadline hierarchy.
+- Enlarged the subtitle to 22 pt on Instagram and 18 pt on LinkedIn, and the Instagram contribution text to 14 pt, while retaining three size tiers per layout.
