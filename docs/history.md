@@ -32,3 +32,5 @@
 - Placed compact Instagram deadline panels side by side, with day/month and year split beside each QR code, and restored the water-cycle illustration to 52 mm height for less compressed mountains and river.
 
 - Reduced Instagram deadline text to the existing 14 pt body size so each complete date, including the year, fits on one line beside its QR code.
+
+- Tightened Instagram deadline panels from 35 to 27 mm height and positioned their headings directly above the full dates; returned the saved space to the illustration.
