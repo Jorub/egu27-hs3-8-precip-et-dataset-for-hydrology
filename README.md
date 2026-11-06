@@ -36,7 +36,7 @@ python3 scripts/validate.py
 
 Setup creates the working folders and an ignored `config.local.json` from `config.example.json`, preserving an existing local configuration. If tools are outside the shell's PATH, put their containing directories in the local `extra_path` list. Credentials are not required for local work and do not belong in the repository.
 
-The build compiles both LaTeX layouts and exports **1080 × 1350** and **1200 × 627** PNGs. It then prepares the website downloads, including a standalone LaTeX ZIP. If the existing artwork is unchanged, use `python3 scripts/build.py --skip-artwork` to refresh only downloads. Temporary TeX files stay in ignored `tmp/latex/`.
+The build compiles both LaTeX layouts and exports **1080 × 1350** and **1200 × 627** PNGs. It then prepares the website downloads, including a standalone LaTeX ZIP, and updates content-versioned preview URLs so browsers load the current artwork. If the existing artwork is unchanged, use `python3 scripts/build.py --skip-artwork` to refresh only downloads. Temporary TeX files stay in ignored `tmp/latex/`.
 
 ## Edit the materials
 

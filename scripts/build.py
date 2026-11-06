@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Build artwork and prepare all static website downloads."""
 import argparse
+import hashlib
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import sys
@@ -24,6 +26,14 @@ def main():
         for extension in ("pdf", "png"):
             filename = f"egu27-hs38-{name}.{extension}"
             shutil.copyfile(ROOT / "output" / filename, downloads / filename)
+    page = ROOT / "site/index.html"
+    html = page.read_text()
+    for name in ("instagram", "linkedin"):
+        filename = f"egu27-hs38-{name}.png"
+        version = hashlib.sha256((downloads / filename).read_bytes()).hexdigest()[:12]
+        pattern = r'(src="downloads/' + re.escape(filename) + r')(?:\?[^"\s]*)?"'
+        html = re.sub(pattern, lambda match: match[1] + '?v=' + version + '"', html)
+    page.write_text(html)
     shutil.copyfile(ROOT / "output/alt-text.txt", downloads / "alt-text.txt")
     shutil.copyfile(ROOT / "outreach/promotion-pack.md", downloads / "promotion-pack.md")
     archive = downloads / "egu27-hs38-latex.zip"

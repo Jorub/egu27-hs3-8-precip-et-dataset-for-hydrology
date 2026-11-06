@@ -19,3 +19,4 @@
 - Restored banner artwork, editable LaTeX sources and downloads exactly from commit 095ff4a, before names were added. Kept the website convener names and ORCID links.
 - Added content-versioned URLs to the two on-page banner previews so cached images do not obscure restored banner designs.
 - Removed the decorative illustration caption and changed the website hero to the full approved session title at a smaller responsive display size. Social banner artwork remains the restored pre-name version.
+- Removed the partially obscured decorative grid beneath the rainfall in both banner illustrations and refreshed their website previews and editable downloads.

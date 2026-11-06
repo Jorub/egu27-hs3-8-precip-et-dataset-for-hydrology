@@ -43,16 +43,6 @@
     \pgfmathsetmacro{\SunHorizontalRadius}{\SunRadius/(#3/180)}
     \pgfmathsetmacro{\SunVerticalRadius}{\SunRadius/(#4/80)}
     \path[fill=Yellow] (151,59) ellipse [x radius=\SunHorizontalRadius mm,y radius=\SunVerticalRadius mm];
-    % A small data-grid motif recalls the gridded products behind the scene.
-    \foreach \x in {8,15,22,29,36} {
-      \foreach \y in {12,19,26} {
-        \draw[draw=Cobalt!35,line width=.22mm] (\x,\y) rectangle +(5.4,5.4);
-      }
-    }
-    \path[fill=Cobalt!18] (8,19) rectangle +(5.4,5.4);
-    \path[fill=Cyan!65] (15,26) rectangle +(5.4,5.4);
-    \path[fill=Cobalt!50] (22,12) rectangle +(5.4,5.4);
-    \path[fill=Teal!50] (29,19) rectangle +(5.4,5.4);
     % Distant mountains.
     \path[fill=Cobalt!72] (59,0)--(108,61)--(126,40)--(153,65)--(192,14)--(192,0)--cycle;
     \path[fill=Cobalt] (95,0)--(128,49)--(140,35)--(162,57)--(194,13)--(194,0)--cycle;
