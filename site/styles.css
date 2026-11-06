@@ -142,8 +142,6 @@ h1 {
 .water-scene { width: 100%; height: auto; display: block; }
 .water-labels { font-family: var(--font-family); font-weight: 700; }
 .water-labels text { font-size: var(--size-heading); }
-.hero-art figcaption { margin-top: -14px; text-align: center; color: #c4dded; line-height: 1.5; }
-.hero-art figcaption span { color: var(--yellow); margin-right: 8px; }
 
 .conference-bar { display: flex; align-items: center; justify-content: space-between; gap: 25px; border-top: 1px solid rgba(201, 228, 255, .25); padding-top: 24px; padding-bottom: 26px; }
 .conference-bar p:first-child { color: #c4dded; }
@@ -211,7 +209,6 @@ h2 { font-size: var(--size-heading); letter-spacing: -.035em; font-weight: 700; 
   .shell { width: calc(100% - 72px); }
   .hero { grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); }
   .hero-art { margin-left: -30px; margin-right: -40px; }
-  .hero-art figcaption { margin-top: -5px; }
   .source-strip { align-items: flex-start; }
   .source-links { flex-direction: column; gap: 15px; }
   .asset-preview { height: 350px; }
@@ -235,7 +232,6 @@ h2 { font-size: var(--size-heading); letter-spacing: -.035em; font-weight: 700; 
   .button { padding: 15px 19px; gap: 18px; }
   .deadline strong > span { margin-inline: 3px; }
   .hero-art { margin-left: -10px; margin-right: -52px; }
-  .hero-art figcaption { display: none; }
   .conference-bar { padding-block: 20px; }
   .conference-bar p:last-child { display: block; text-align: right; }
   .conference-bar p:last-child > span { display: block; border: 0; padding: 0; }
