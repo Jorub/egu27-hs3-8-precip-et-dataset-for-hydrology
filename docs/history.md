@@ -17,3 +17,4 @@
 - Restored the complete mountain and water-cycle illustrations by allocating separate space for the compact linked names and the artwork; removed the cropped illustration viewports.
 - Reduced the banner body tier (Instagram 10 pt, LinkedIn 9 pt), removed the name-panel fill, and placed the compact linked names below Call for abstracts with the label Convener.
 - Restored banner artwork, editable LaTeX sources and downloads exactly from commit 095ff4a, before names were added. Kept the website convener names and ORCID links.
+- Added content-versioned URLs to the two on-page banner previews so cached images do not obscure restored banner designs.
