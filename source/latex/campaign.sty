@@ -32,6 +32,7 @@
 \newcommand{\ContextFont}{\fontsize{\ContextPoints}{\ContextLeading}\selectfont}
 \newcommand{\BodyFont}{\fontsize{\BodyPoints}{\BodyLeading}\selectfont}
 
+\newif\ifSceneLabels\SceneLabelstrue
 % Original vector illustration. Geometry and labels are live TikZ elements.
 % Arguments: lower-left x, lower-left y, width, height (all in mm).
 \newcommand{\WaterScene}[4]{%
@@ -93,13 +94,13 @@
       \draw[Cobalt,line width=.9mm,line cap=round] (\x,47)--+( -3,-7);
       \draw[Cyan,line width=.9mm,line cap=round] (\x-1,35)--+(-2,-5);
     }
-    \node[fill=Yellow,text=Ink,rounded corners=2.4mm,inner xsep=2.9mm,inner ysep=1.5mm,font=\BodyFont\bfseries] at (63,42) {P};
+    \ifSceneLabels\node[fill=Yellow,text=Ink,rounded corners=2.4mm,inner xsep=2.9mm,inner ysep=1.5mm,font=\BodyFont\bfseries] at (63,42) {P};\fi
     % Upward ET arrows are deliberately wavy rather than straight rainfall.
     \foreach \x in {130,143,156} {
       \draw[Yellow,line width=1.1mm,-{Stealth[length=3.2mm,width=2.8mm]},line cap=round]
         (\x,33) .. controls (\x-6,41) and (\x+5,44) .. (\x,55);
     }
-    \node[fill=Ink,text=white,rounded corners=2.4mm,inner xsep=2.5mm,inner ysep=1.5mm,font=\BodyFont\bfseries] at (161,37) {ET};
+    \ifSceneLabels\node[fill=Ink,text=white,rounded corners=2.4mm,inner xsep=2.5mm,inner ysep=1.5mm,font=\BodyFont\bfseries] at (161,37) {ET};\fi
   \end{scope}%
 }
 
@@ -127,7 +128,14 @@
 \node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,137) {\ContributionTwo};
 \node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,116) {\ContributionThree};
 \node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,116) {\ContributionFour};
-\WaterScene{0}{56}{180}{48}
+\path[fill=Cobalt] (0,77) rectangle (180,104);
+\node[anchor=base west,text=Yellow,font=\BodyFont\bfseries] at (12,99) {YOUR CONVENERS};
+\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (12,92) {\ConvenerOne};
+\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (94,92) {\ConvenerTwo};
+\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (12,86) {\ConvenerThree};
+\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (94,86) {\ConvenerFour};
+\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (12,80) {\ConvenerFive};
+\begin{scope}\clip (0,56) rectangle (180,77);\SceneLabelsfalse\WaterScene{0}{56}{180}{48}\end{scope}
 \path[fill=Ink] (0,0) rectangle (180,56);
 % Earlier travel-support deadline receives the warm, high-contrast first panel.
 \path[fill=Yellow,rounded corners=2mm] (10,22) rectangle (92,51);
@@ -154,7 +162,14 @@
 \node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (10,96) {\href{\ConferenceURL}{\ConferenceName}};
 \node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (190,96) {\href{\SessionURL}{SESSION \SessionCode}};
 \draw[Ink!15,line width=.2mm] (10,91)--(190,91);
-\WaterScene{109}{43}{91}{43}
+\begin{scope}\clip (109,43) rectangle (200,62);\SceneLabelsfalse\WaterScene{109}{43}{91}{43}\end{scope}
+\path[fill=Cobalt] (109,62) rectangle (200,88);
+\node[anchor=base west,text=Yellow,font=\BodyFont\bfseries] at (113,83.5) {YOUR CONVENERS};
+\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (113,79.3) {\ConvenerOne};
+\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (113,75.3) {\ConvenerTwo};
+\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (113,71.3) {\ConvenerThree};
+\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (113,67.3) {\ConvenerFour};
+\node[anchor=base west,text=white,font=\BodyFont\bfseries] at (113,63.3) {\ConvenerFive};
 \node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (10,83) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
 \node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (9.5,69) {\PrimaryTitle};
 \node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (9.5,56) {\SecondaryTitle};

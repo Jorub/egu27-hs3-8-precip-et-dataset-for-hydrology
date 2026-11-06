@@ -10,3 +10,4 @@
 - The owner preferred the strong blue/yellow palette, one font family and no more than three size levels. Replaced the verb-only themes with four compact contribution topics to retain scientific specificity.
 - Prepared a GitHub Pages deployment workflow. Publishing status is established by the actual repository and deployment, not by this history entry.
 - Corrected co-convener André Simões Ballarin’s full name in the website and share copy following the owner’s correction.
+- Promoted the conveners to a prominent blue/yellow section near the top of the website and added all five names to dedicated blue panels in both editable banners, preserving the three-size typography system.
