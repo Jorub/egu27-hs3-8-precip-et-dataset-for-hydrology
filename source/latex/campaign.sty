@@ -95,7 +95,7 @@
 }
 
 \newcommand{\InstagramArtwork}{%
-\UseCampaignSizes{24}{20}{14}%
+\UseCampaignSizes{22}{18}{14}%
 \begin{tikzpicture}[remember picture,overlay,x=1mm,y=1mm]
 \begin{scope}[shift={(current page.south west)}]
 \clip (0,0) rectangle (180,225);
@@ -106,20 +106,20 @@
 \draw[Ink!15,line width=.25mm] (12,204)--(168,204);
 \node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (12,194) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
 \node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (12,183) {\PrimaryTitle};
-\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (12,173) {\SecondaryTitle{} Datasets};
-\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (12,163) {\ContextTitle};
-\node[anchor=base west,text=Ink,font=\ContextFont] at (12,155) {\SubtitleOne{} \SubtitleTwo};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (12,150) {We welcome contributions on\ldots};
+\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (12,174) {\SecondaryTitle{} Datasets};
+\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (12,165) {\ContextTitle};
+\node[anchor=base west,text=Ink,font=\ContextFont] at (12,157) {\SubtitleOne{} \SubtitleTwo};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (12,152.5) {We welcome contributions on\ldots};
 % Four contribution topics: compact content boxes instead of verb-only labels.
-\foreach \x/\y in {12/130,94/130,12/109,94/109} {
+\foreach \x/\y in {12/133,94/133,12/112,94/112} {
   \path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=1mm] (\x,\y) rectangle +(74,18);
   \path[fill=Yellow] (\x,\y+3) rectangle +(1.2,12);
 }
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,139) {\ContributionOne};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,139) {\ContributionTwo};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,118) {\ContributionThree};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,118) {\ContributionFour};
-\WaterScene{0}{42}{180}{64}
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,142) {\ContributionOne};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,142) {\ContributionTwo};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,121) {\ContributionThree};
+\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,121) {\ContributionFour};
+\WaterScene{0}{42}{180}{67}
 \path[fill=Ink] (0,0) rectangle (180,42);
 % Compact paired panels leave more height for the mountain/river scene.
 \path[fill=Yellow,rounded corners=2mm] (12,12) rectangle (88,39);

@@ -36,3 +36,5 @@
 - Tightened Instagram deadline panels from 35 to 27 mm height and positioned their headings directly above the full dates; returned the saved space to the illustration.
 
 - Reduced the Instagram title sizes to 24/20 pt while retaining 14 pt body text; tightened the gap to the contribution introduction and moved the topic boxes up to give the landscape more room.
+
+- Further reduced Instagram title typography to 22/18 pt, keeping 14 pt body text and tightening title-to-introduction spacing.
