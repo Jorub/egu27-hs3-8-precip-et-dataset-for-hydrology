@@ -146,39 +146,39 @@
 \clip (0,0) rectangle (200,104.5);
 \path[fill=Cream] (0,0) rectangle (200,104.5);
 \path[fill=Yellow] (0,88)--(5,88)--(5,104.5)--(0,104.5)--cycle;
-\node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (10,96) {\href{\ConferenceURL}{\ConferenceName}};
-\node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (190,96) {\href{\SessionURL}{SESSION \SessionCode}};
+\node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (8,96) {\href{\ConferenceURL}{\ConferenceName}};
+\node[anchor=base east,text=Cobalt,font=\BodyFont\bfseries] at (193,96) {\href{\SessionURL}{SESSION \SessionCode}};
 \node[anchor=base west,text=Ink,font=\BodyFont] at (48,96) {\href{\ConferenceURL}{\ConferenceLine}};
-\draw[Ink!15,line width=.2mm] (10,91)--(190,91);
+\draw[Ink!15,line width=.2mm] (8,91)--(193,91);
 % Align the complete title block and illustration to the same top/bottom edges.
 \begin{scope}
 \clip[rounded corners=2mm] (115,45.5) rectangle (193,80.5);
 \WaterScene{115}{45.5}{78}{35}
 \end{scope}
-\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (10,83) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
-\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (10,75.5) {\PrimaryTitle};
-\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (10,68.5) {\SecondaryTitle{} Datasets};
-\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (10,61.5) {\ContextTitle};
-\node[anchor=base west,text=black!62,font=\ContextFont] at (10,52.5) {\SubtitleOne};
-\node[anchor=base west,text=black!62,font=\ContextFont] at (10,45.5) {\SubtitleTwo};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (10,39.5) {We welcome contributions on\ldots};
+\node[anchor=base west,text=Cobalt,font=\BodyFont\bfseries] at (8,83) {\href{\SessionURL}{CALL FOR ABSTRACTS}};
+\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (8,75.5) {\PrimaryTitle};
+\node[anchor=base west,text=Cobalt,font=\HeadlineFont\bfseries] at (8,68.5) {\SecondaryTitle{} Datasets};
+\node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (8,61.5) {\ContextTitle};
+\node[anchor=base west,text=black!62,font=\ContextFont] at (8,52.5) {\SubtitleOne};
+\node[anchor=base west,text=black!62,font=\ContextFont] at (8,45.5) {\SubtitleTwo};
+\node[anchor=base west,text=Ink,font=\BodyFont] at (8,39.5) {We welcome contributions on\ldots};
 % One topic strip leaves room for the headline and the compact landscape.
 \foreach \x/\w in {8/50,61/42,106/44,153/40} {
-  \path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=1mm] (\x,25) rectangle +(\w,13);
-  \path[fill=Yellow] (\x,27) rectangle +(1,8);
+  \path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=1mm] (\x,25.5) rectangle +(\w,12);
+  \path[fill=Yellow] (\x,27.5) rectangle +(1,8);
 }
 \node[anchor=west,text width=43mm,align=left,text=Ink,font=\BodyFont] at (12,31.5) {\ContributionOne};
 \node[anchor=west,text width=35mm,align=left,text=Ink,font=\BodyFont] at (65,31.5) {\ContributionTwo};
 \node[anchor=west,text width=37mm,align=left,text=Ink,font=\BodyFont] at (110,31.5) {\ContributionThree};
 \node[anchor=west,text width=33mm,align=left,text=Ink,font=\BodyFont] at (157,31.5) {\ContributionFour};
 \path[fill=Ink] (0,0) rectangle (200,24);
-\path[fill=Yellow,rounded corners=1.5mm] (7,8) rectangle (97,22.5);
+\path[fill=Yellow,rounded corners=1.5mm] (8,8) rectangle (98,22.5);
 \path[fill=Cobalt!18!Ink,draw=white!25!Ink,line width=.2mm,rounded corners=1.5mm] (103,8) rectangle (193,22.5);
-\node[anchor=base west,text=Ink,font=\BodyFont\bfseries] at (11,18) {\href{\SupportURL}{TRAVEL SUPPORT}};
-\node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (11,10) {\href{\SupportURL}{\SupportDeadlineDate}};
+\node[anchor=base west,text=Ink,font=\BodyFont\bfseries] at (12,18) {\href{\SupportURL}{TRAVEL SUPPORT}};
+\node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (12,10) {\href{\SupportURL}{\SupportDeadlineDate}};
 \node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (107,18) {\href{\SessionURL}{ABSTRACTS}};
 \node[anchor=base west,text=white,font=\ContextFont\bfseries] at (107,10) {\href{\SessionURL}{\DeadlineDate}};
-\node[anchor=base west,text=white,font=\BodyFont] at (10,2.5) {\ConvenerLineOne\enspace\textperiodcentered\enspace\ConvenerLineTwo};
+\node[anchor=base,text=white,font=\BodyFont] at (100.5,2.5) {\ConvenerLineOne\enspace\textperiodcentered\enspace\ConvenerLineTwo};
 \end{scope}
 \end{tikzpicture}%
 }

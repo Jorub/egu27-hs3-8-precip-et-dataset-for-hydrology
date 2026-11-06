@@ -62,3 +62,5 @@
 - Removed LinkedIn deadline times, moved conference dates/location into the header and placed an initialled, ORCID-linked convener line beneath two balanced deadline panels.
 
 - Widened the first LinkedIn topic box from 44 to 50 mm so evaluation/benchmarking fits on two lines. Redistributed the remaining three boxes to preserve the strip width and equal gaps.
+
+- Polished LinkedIn alignment: unified outer content edges, evened topic-card vertical padding and band spacing, aligned deadline-panel text padding, and centred the convener credit.
