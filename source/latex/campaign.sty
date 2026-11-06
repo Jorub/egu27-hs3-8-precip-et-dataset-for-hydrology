@@ -110,15 +110,16 @@
 \node[anchor=base west,text=Ink,font=\HeadlineFont\bfseries] at (12,174) {\textcolor{Cobalt}{Datasets} \ContextTitle};
 \node[anchor=base west,text=Ink,font=\ContextFont] at (12,166) {\SubtitleOne{} \SubtitleTwo};
 \node[anchor=base west,text=Ink,font=\BodyFont] at (12,156.5) {We welcome contributions on\ldots};
-% Four contribution topics: compact content boxes instead of verb-only labels.
-\foreach \x/\y in {12/137,94/137,12/116,94/116} {
-  \path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=1mm] (\x,\y) rectangle +(74,18);
-  \path[fill=Yellow] (\x,\y+3) rectangle +(1.2,12);
+% One shared panel gives the four topics a single clear reading order.
+\path[fill=Sky!45!Cream,draw=Cobalt!25,line width=.2mm,rounded corners=2mm] (12,116) rectangle (168,153);
+\foreach \y in {147,138.5,130,121.5} {
+  \path[fill=Yellow] (17.5,\y-1) rectangle +(2,2);
 }
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,146) {\ContributionOne};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,146) {\ContributionTwo};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (17,125) {\ContributionThree};
-\node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,125) {\ContributionFour};
+% Reuse the shared topic wording, replacing compact-layout line breaks with spaces.
+\node[anchor=west,text=Ink,font=\ContextFont] at (22,147) {{\renewcommand{\\}{\space}\ContributionOne}};
+\node[anchor=west,text=Ink,font=\ContextFont] at (22,138.5) {{\renewcommand{\\}{\space}\ContributionTwo}};
+\node[anchor=west,text=Ink,font=\ContextFont] at (22,130) {{\renewcommand{\\}{\space}\ContributionThree}};
+\node[anchor=west,text=Ink,font=\ContextFont] at (22,121.5) {{\renewcommand{\\}{\space}\ContributionFour}};
 % Restrained convener credit occupies its own space above the illustration.
 \node[anchor=base west,text=Ink,font=\BodyFont] at (12,108) {\ConvenerLineOne};
 \node[anchor=base west,text=Ink,font=\BodyFont] at (12,101) {\ConvenerLineTwo};
