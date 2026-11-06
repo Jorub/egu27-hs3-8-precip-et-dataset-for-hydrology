@@ -24,3 +24,5 @@
 - Enlarged the subtitle to 22 pt on Instagram and 18 pt on LinkedIn, and the Instagram contribution text to 14 pt, while retaining three size tiers per layout.
 
 - Added small labelled vector QR codes to the Instagram footer for abstract submission/session information and travel support, retaining clickable PDF links and the three-size typography system.
+
+- Integrated Instagram QR codes into the corresponding travel-support and abstract deadline panels and removed the displayed deadline times from this banner.

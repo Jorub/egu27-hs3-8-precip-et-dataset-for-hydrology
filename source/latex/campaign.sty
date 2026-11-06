@@ -121,22 +121,17 @@
 \node[anchor=west,text width=65mm,align=left,text=Ink,font=\BodyFont] at (99,114) {\ContributionFour};
 \WaterScene{0}{64}{180}{38}
 \path[fill=Ink] (0,0) rectangle (180,64);
-% Earlier travel-support deadline receives the warm, high-contrast first panel.
-\path[fill=Yellow,rounded corners=2mm] (10,30) rectangle (92,59);
+% Each deadline panel contains its own linked, scannable vector QR code.
+\path[fill=Yellow,rounded corners=2mm] (10,12) rectangle (92,59);
+\path[fill=Cobalt!18!Ink,draw=white!25!Ink,line width=.2mm,rounded corners=2mm] (98,12) rectangle (176,59);
 \node[anchor=base west,text=Ink,font=\BodyFont\bfseries] at (14,52) {\href{\SupportURL}{TRAVEL SUPPORT}};
 \node[anchor=base west,text=Ink,font=\ContextFont\bfseries] at (14,41) {\href{\SupportURL}{\SupportDeadlineDate}};
-\node[anchor=base west,text=Ink,font=\BodyFont] at (14,33) {\href{\SupportURL}{\SupportDeadlineTime}};
-\node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (101,52) {\href{\SessionURL}{ABSTRACTS}};
-\node[anchor=base west,text=white,font=\ContextFont\bfseries] at (101,41) {\href{\SessionURL}{\DeadlineDate}};
-\node[anchor=base west,text=white,font=\BodyFont] at (101,33) {\href{\SessionURL}{\DeadlineTime}};
-\draw[white!30!Ink,line width=.2mm] (12,28)--(168,28);
-\node[anchor=base west,text=white,font=\BodyFont] at (12,17) {\href{\ConferenceURL}{4--9 April 2027}};
-\node[anchor=base west,text=white,font=\BodyFont] at (12,8) {\href{\ConferenceURL}{Vienna \& online}};
-% Small vector QR codes with four-module white quiet zones, clickable in PDF.
-\node[anchor=base,text=Mint,font=\BodyFont\bfseries] at (104,24) {\href{\SessionURL}{Abstracts}};
-\node[anchor=base,text=Mint,font=\BodyFont\bfseries] at (150,24) {\href{\SupportURL}{Support}};
-\node[anchor=south,fill=white,inner sep=0pt,text=black] at (104,1) {\qrcode[height=17mm,padding,level=L]{\SessionURL}};
-\node[anchor=south,fill=white,inner sep=0pt,text=black] at (150,1) {\qrcode[height=17mm,padding,level=L]{\SupportURL}};
+\node[anchor=base west,text=Mint,font=\BodyFont\bfseries] at (102,52) {\href{\SessionURL}{ABSTRACTS}};
+\node[anchor=base west,text=white,font=\ContextFont\bfseries] at (102,41) {\href{\SessionURL}{\DeadlineDate}};
+% Four-module quiet zones preserve contrast against the coloured panels.
+\node[anchor=south,fill=white,inner sep=0pt,text=black] at (51,15) {\qrcode[height=17mm,padding,level=L]{\SupportURL}};
+\node[anchor=south,fill=white,inner sep=0pt,text=black] at (137,15) {\qrcode[height=17mm,padding,level=L]{\SessionURL}};
+\node[anchor=base west,text=white,font=\BodyFont] at (12,4) {\href{\ConferenceURL}{\ConferenceLine}};
 \end{scope}
 \end{tikzpicture}%
 }
