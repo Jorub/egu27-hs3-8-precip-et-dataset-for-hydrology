@@ -64,3 +64,5 @@
 - Widened the first LinkedIn topic box from 44 to 50 mm so evaluation/benchmarking fits on two lines. Redistributed the remaining three boxes to preserve the strip width and equal gaps.
 
 - Polished LinkedIn alignment: unified outer content edges, evened topic-card vertical padding and band spacing, aligned deadline-panel text padding, and centred the convener credit.
+
+- Corrected Oscar Manuel Baez-Villanueva’s surname throughout the website, campaign copy, alt text and editable banner sources; rebuilt all exports and download packages.

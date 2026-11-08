@@ -149,5 +149,5 @@ Deadline: **12 January 2027, 13:00 CET**.
 - The current illustrated PNG cards and linked PDFs are in **../output/**. Editable LaTeX and TikZ sources are in **../source/latex/**. The files in **graphics/** preserve the first typography study.
 - Use the 1080 × 1350 card for an Instagram feed post and the 1200 × 627 card for LinkedIn. The Story text above can be placed on a platform-native Story with a link sticker.
 - Add the corresponding alt text from **../output/alt-text.txt** when posting.
-- On LinkedIn, select the co-conveners’ actual accounts when tagging: Mijael Rodrigo Vargas Godoy, Johanna R. Thomson, André Simões Ballarin, Oscar Manuel Baez Villanueva and Chiyuan Miao. No social handles have been guessed.
+- On LinkedIn, select the co-conveners’ actual accounts when tagging: Mijael Rodrigo Vargas Godoy, Johanna R. Thomson, André Simões Ballarin, Oscar Manuel Baez-Villanueva and Chiyuan Miao. No social handles have been guessed.
 - The conference dates are not the session’s scheduled presentation dates; the copy does not announce a session time or speaker.
