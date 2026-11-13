@@ -1,0 +1,6 @@
+# Project copy. Crawlers use https://jorub.github.io/robots.txt at the host root.
+# These directives can also be included in that root file.
+User-agent: *
+Allow: /
+
+Sitemap: https://jorub.github.io/egu27-hs3-8-precip-et-dataset-for-hydrology/sitemap.xml

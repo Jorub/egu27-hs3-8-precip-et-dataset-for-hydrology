@@ -69,6 +69,14 @@ For a new GitHub repository, select **Settings → Pages → Source → GitHub A
 
 Do not call that address live until the GitHub Pages deployment has succeeded. Follow the [official GitHub Pages workflow guidance](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) for changes to hosting configuration. Rebuild and commit the prepared downloads whenever the artwork changes; CI validates and deploys them without installing a TeX distribution.
 
+## Search discovery
+
+The canonical landing page is listed in [`site/sitemap.xml`](site/sitemap.xml), served at [the public sitemap](https://jorub.github.io/egu27-hs3-8-precip-et-dataset-for-hydrology/sitemap.xml). The HTML head also links to this file. Keep the canonical URL and sitemap in sync if the site moves.
+
+`site/robots.txt` contains permissive directives and the absolute sitemap URL. Because this is a GitHub Pages **project** site, that copy is served inside the project subfolder. Search engines consult `https://jorub.github.io/robots.txt` at the host root instead; a root-level file would need to be published by the user-site repository. A missing root robots.txt does not itself block crawling. This project does not modify other repositories.
+
+For Google Search Console, add a **URL-prefix property** for `https://jorub.github.io/egu27-hs3-8-precip-et-dataset-for-hydrology/`. Use Google's real HTML verification tag in the page head or its supplied verification file in `site/`; retain it after verification. Submit `sitemap.xml`, inspect the canonical landing-page URL and request indexing. Verification requires access to the owner's Google account or its issued verification token; publishing a sitemap alone does not verify ownership or guarantee indexing.
+
 ## Contribution and attribution
 
 Read [CONTRIBUTING.md](CONTRIBUTING.md) for editing, validation and commit conventions. Scientific session wording and approval originate with the conveners. The website, revised campaign artwork, drafts and project tooling were prepared with **GPT-6 (Codex)** assistance; the supplied colleague reference remains human-provided material and is not claimed as AI-authored.

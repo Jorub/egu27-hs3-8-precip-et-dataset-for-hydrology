@@ -66,3 +66,5 @@
 - Polished LinkedIn alignment: unified outer content edges, evened topic-card vertical padding and band spacing, aligned deadline-panel text padding, and centred the convener credit.
 
 - Corrected Oscar Manuel Baez-Villanueva’s surname throughout the website, campaign copy, alt text and editable banner sources; rebuilt all exports and download packages.
+
+- Added a canonical landing-page XML sitemap, HTML sitemap discovery link and a permissive project robots.txt. Documented host-root robots scope and Search Console URL-prefix verification. Confirmed the repository is already pinned on the public GitHub profile.
